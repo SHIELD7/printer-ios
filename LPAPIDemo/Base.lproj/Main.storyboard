@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7y-JP-Bh2">
+                                <rect key="frame" x="87.5" y="70" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E9Y-gt-CB3"/>
+                                    <constraint firstAttribute="width" constant="200" id="zgH-J0-gwi"/>
+                                </constraints>
+                                <state key="normal" title="搜索打印机"/>
+                                <connections>
+                                    <action selector="scanPrinters:" destination="BYZ-38-t0r" eventType="touchUpInside" id="45y-nO-XOP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDk-ps-ZzZ">
+                                <rect key="frame" x="87.5" y="110" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="D9E-d9-rRf"/>
+                                    <constraint firstAttribute="height" constant="30" id="EsN-1Y-11J"/>
+                                </constraints>
+                                <state key="normal" title="生成标签"/>
+                                <connections>
+                                    <action selector="createLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwx-MA-D8T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kK-Gw-nSR">
+                                <rect key="frame" x="87.5" y="150" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8N6-c1-OcI"/>
+                                    <constraint firstAttribute="height" constant="30" id="dMR-rW-blP"/>
+                                </constraints>
+                                <state key="normal" title="打印"/>
+                                <connections>
+                                    <action selector="printLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjt-PN-F2a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mp-v2-lNX">
+                                <rect key="frame" x="87.5" y="190" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="RGq-M9-9J3"/>
+                                    <constraint firstAttribute="height" constant="30" id="aNT-TK-sxe"/>
+                                </constraints>
+                                <state key="normal" title="断开打印机连接"/>
+                                <connections>
+                                    <action selector="closePrinter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Okx-ty-mUd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x7y-JP-Bh2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="DQ4-3L-TS9"/>
+                            <constraint firstItem="yDk-ps-ZzZ" firstAttribute="top" secondItem="x7y-JP-Bh2" secondAttribute="bottom" constant="10" id="Fkq-C2-W3H"/>
+                            <constraint firstItem="0Mp-v2-lNX" firstAttribute="top" secondItem="4kK-Gw-nSR" secondAttribute="bottom" constant="10" id="Ils-HU-pru"/>
+                            <constraint firstItem="x7y-JP-Bh2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rk2-NJ-av6"/>
+                            <constraint firstItem="4kK-Gw-nSR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Szh-Mu-1fD"/>
+                            <constraint firstItem="0Mp-v2-lNX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lik-MC-oGN"/>
+                            <constraint firstItem="4kK-Gw-nSR" firstAttribute="top" secondItem="yDk-ps-ZzZ" secondAttribute="bottom" constant="10" id="tzd-Pi-INM"/>
+                            <constraint firstItem="yDk-ps-ZzZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wY8-XS-L0l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="134"/>
+        </scene>
+    </scenes>
+</document>
